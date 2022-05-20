@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="titulo">Cadastro Muscle Gym</h1>
+            <p id="subtitulo">Faça seu cadastro na melhor academia da cidade</p>
+            <br>
+        </div>
+    </header>
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>  
+            <div class="campo">
+                <label for="sobrenome"> <strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>                    
+            </div>                
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="campo">
+            <label><strong>Qual seu objetivo na academia?</strong></label>
+            <label>
+                <input type="radio" name="fit" value="emagrecer">Emagrecer
+            </label>
+            <label>
+                <input type="radio" name="fit" value="ganhar massa magra">Ganhar massa magra
+            </label>
+            <label>
+                <input type="radio" name="fit" value="fortalecimento muscular">Fortalecimento muscular
+            </label>        
+        </div>
+
+        <div class="campo">
+            <label for="idade"><strong>Sua idade</strong></label>
+            <select id="idade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>entre 15-18</option>
+                <option>entre 18-21</option>
+                <option>entre 21-40</option>
+                <option>entre 40-50</option>
+                <option>entre 50-65</option>
+                <option>mais de 65</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione se você tem alguma comorbidade:</strong></label><br><br>
+                <input type="checkbox" id="comorbidades1" name="comorbidades1" value="Hipertensão arterial sistêmica">
+                <label for="comorbidades1">Hipertensão arterial sistêmica</label>
+                <input type="checkbox" id="comorbidades2" name="comorbidades2" value="Diabetes melittus tipo 2">
+                <label for="comorbidades2">Diabetes melittus tipo 2</label>
+                <input type="checkbox" id="comorbidades3" name="comorbidades3" value="Glicemia de jejum alterada">
+                <label for="comorbidades2">Glicemia de jejum alterada</label>
+                <input type="checkbox" id="comorbidades4" name="comorbidades4" value="Hipertrigliceridemia">
+                <label for="comorbidades2">Hipertrigliceridemia</label>
+                <input type="checkbox" id="comorbidades5" name="comorbidades5" value="Sequela de lesão ortopédica">
+                <label for="comorbidades2">Sequela de lesão ortopédica</label>
+                <input type="checkbox" id="comorbidades6" name="comorbidades6" value="outro">
+                <label for="comorbidades6">Outro</label>
+                <textarea name="outro" id="outro" cols="65" rows="4"></textarea>
+
+            </div>
+        </fieldset>
+            
+    </form>
+</body>
+</html>
