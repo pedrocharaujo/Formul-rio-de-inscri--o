@@ -12,12 +12,14 @@
     --color01: #7882b3;
     --color02: #7c7fd8;
     --color03: #1B1C30;
+    --color04: black;
 }
 
 body {
     background-color: var(--color01);
     margin-left: 36%;
     margin-top: 2%;
+    justify-content: center;
 }
 
 header {    
@@ -44,7 +46,7 @@ header {
 }
 
 fieldset {
-    margin: 0;
+    border: 0;
 }
 
 form {
@@ -53,4 +55,48 @@ form {
     position: absolute;
     left: 25%;
     top: 25%;
+}
+
+input, select, textarea button {
+    font-size: 1em;
+    border-radius: 5px;
+    color: var(--color03)
+}
+
+.grupo:before, .grupo::after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label { 
+    margin-bottom: 0.2em;
+    color: var(--color04);
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input [type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background-color: #babacf;
 }
