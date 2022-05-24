@@ -4,22 +4,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color01: #7882b3;
+    --color02: #7c7fd8;
+    --color03: #1B1C30;
+}
+
+body {
+    background-color: var(--color01);
+    margin-left: 36%;
+    margin-top: 2%;
 }
 
 header {    
     text-align: center;
 }
 
-header h1 {
+#titulo {
     font-family: 'Koulen', cursive;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    margin-left: 7%;
+    padding: 5px 0px;
 }
 
-header p {
+#subtitulo {
     font-family: 'Akshar', sans-serif;
+    margin-left: 10%;
+    font-size: 1.2em;
+}
+
+#check {
+    display: inline-block;
+}
+
+fieldset {
+    margin: 0;
 }
 
 form {
     font-family: 'Akshar', sans-serif;
+    max-width: 600px;     
+    position: absolute;
+    left: 25%;
+    top: 25%;
 }
